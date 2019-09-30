@@ -10,6 +10,9 @@ dependencies:
 - name: gostart
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.2
+- name: pim-dam
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 1.0.19
 - name: prowstart
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.4
