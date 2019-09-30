@@ -1,0 +1,33 @@
+
+Showing logs for build [32mgitops-unbxd-environment-flashe-d76d2-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-4vd95[0m
+{"level":"warn","ts":1569841173.472451,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1569841173.4728203,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mgitops-unbxd-environment-flashe-d76d2-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-vw2kp[0m
+{"level":"warn","ts":1569841174.4550953,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1569841174.4561818,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+Showing logs for build [32mgitops-unbxd-environment-flashe-d76d2-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mgitops-unbxd-environment-flashe-d76d2-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-gitops-unbxd-environment-flashe-s7bmh[0m
+{"level":"warn","ts":1569841180.5521097,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1569841180.816379,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/************/environment-flasherweak-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mgitops-unbxd-environment-flashe-d76d2-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:fac479cc94d34de09c3c6f797f64e2f13744d600,6:7d0b6a203b9cb5ff55534ff3ef16f92e27dbcab8
+DEBUG: ran git fetch --unshallow origin 7d0b6a203b9cb5ff55534ff3ef16f92e27dbcab8: fac479cc94d34de09c3c6f797f64e2f13744d600: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard fac479cc94d34de09c3c6f797f64e2f13744d600 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 7d0b6a203b9cb5ff55534ff3ef16f92e27dbcab8 in 
+Merged SHA 7d0b6a203b9cb5ff55534ff3ef16f92e27dbcab8 with commit message 'chore: Promote pim-dam to version 1.0.21' into base branch master
+
+Showing logs for build [32mgitops-unbxd-environment-flashe-d76d2-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
